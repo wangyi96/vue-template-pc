@@ -1,0 +1,22 @@
+{
+  "name": "vue-pc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangyi96/-vue-pc-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangyi96/-vue-pc-/issues"
+  },
+  "homepage": "https://github.com/wangyi96/-vue-pc-#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
