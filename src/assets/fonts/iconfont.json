@@ -1,0 +1,65 @@
+{
+  "id": "2020953",
+  "name": "玺承首页",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16714090",
+      "name": "6.排序",
+      "font_class": "6paixu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "16714091",
+      "name": "5.筛选",
+      "font_class": "5shaixuan",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "16714092",
+      "name": "8.拨号",
+      "font_class": "8bohao",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "16714093",
+      "name": "7.搜索svg",
+      "font_class": "7sousuosvg",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "16694897",
+      "name": "1.首页-01",
+      "font_class": "1shouye-01",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "16694898",
+      "name": "3.报表",
+      "font_class": "3baobiao",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "16694900",
+      "name": "4.我的",
+      "font_class": "4wode",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "16694902",
+      "name": "2.客户-01",
+      "font_class": "2kehu-01",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}
