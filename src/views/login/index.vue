@@ -87,22 +87,16 @@ export default {
         this.$message.error('请输入用户名和密码')
         return 
       }
-      let _this = this;
+
       let publicKey = 'MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJewQKQLIdfCWL802VD5XTvSUATZpZuEnLAC5eO5+Qr5CDVKgT5xqnFEVCWInorl6LQXeHnVVFva381Lfc1PaAMCAwEAAQ=='
       let params = {
         password: this.encryptedData(publicKey,this.params.password),
         userName: this.params.userName
       }
-      _this.$api.user.login(params).then((res) => {
-        if(res.code){
-          this.$message.error(res.msg)
-        }else{
-          _this.$methods.setSessionStorage('Role',res.role);
-          res.department ? _this.$methods.setSessionStorage('Department',res.department):'';
-          res.group ? _this.$methods.setSessionStorage('Group',res.group):'';
-          _this.$methods.setSessionStorage('loginToken',res.token);
-          _this.$router.replace({name:'Home'})
-        }
+
+      this.$store.dispatch('user/login', params).then(() => {
+        console.log('----')
+        this.$router.replace({ name: 'Home' })
       })
     },
     encryptedData(publicKey, data) {

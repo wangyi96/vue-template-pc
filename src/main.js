@@ -25,17 +25,18 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
-router.beforeEach((to,form,next)=>{
-  let token = methods.getSessionStorage('loginToken');
-  if(to.matched.some(record => record.meta.requiresAuth)){
+router.beforeEach((to, form, next) => {
+  let sessionToken = methods.getSessionStorage('store') ? JSON.parse(methods.getSessionStorage('store')).user.token : ''
+  let token = store.state.user.token || sessionToken
+  if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!token) { // 判断当前的token是否存在
       next({
-          name: 'Login'
+        name: 'Login'
       })
     } else {
       next()
     }
-  }else{
+  } else {
     next()
   }
 })

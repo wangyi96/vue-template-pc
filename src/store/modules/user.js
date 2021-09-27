@@ -35,6 +35,7 @@ const actions = {
       if (res.code) {
         Message.error(res.msg)
       } else {
+        commit('SET_STATE', res)
         resolve()
       }
     })
