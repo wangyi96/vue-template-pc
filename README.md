@@ -1,4 +1,4 @@
-## vue-h5-template
+## vue-pc-template
 - 基于vue-cli3.0+webpack 4 + element ui + sass + fonts适配方案+axios封装，构建管理端模板脚手架
 - node版本 v10.16.3  npm版本 v6.9.0
 
@@ -46,9 +46,6 @@
     } 
   ```
 
-
-### plugins
-- vant的组件引入
 
 ### 跨域配置
 - 在vue.config.js文件里去配置跨域
